@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>联系我们</title>
+		<link rel="shortcut icon" type="text/css" href="img/logo.svg" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 经过出行 -->
+		
+		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+
+
+		<!--   [if lt IE 9]
+  <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src='http://oss.maxcdn.com/libs/respond.js/1.3.0/reapond.min.js'></script>
+  <script src='http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js'></script>
+  [endif] -->
+	
+	</head>
+	<body>
+		<!-- PC头部nav -->
+		<div class="pc-topnav">
+			<div class="topnav">
+				<h2><a href="../index.html"><img src="../img/logo.svg"></a></h2>
+				<ul class="nav" id="nav">
+					<li>
+						<a href="../index.html">首页</a>
+					</li>
+					<li class="nav-li">
+						<a href="../company/index.html">公司简介</a>
+						<ul class="nav-wrop">
+							<li><a href="../company/index.html#gsjj" >公司简介</a></li>
+							<li><a href="../company/index.html#qywh">公司文化</a></li>
+							<li><a href="../company/index.html#qyxcp">频道宣传</a></li>
+							<li><a href="../company/index.html#ryzi">荣誉资质</a></li>
+							<li><a href="../company/index.html#fzlc">发展历程</a></li>
+						</ul>
+					</li>
+					<li class="nav-li">
+						<a href="../new/index.html">新闻动态</a>
+						<ul class="nav-wrop">
+							<li><a href="../new/01-index.html">公司动态</a></li>
+							<li><a href="../new/02-index.html">行业动态</a></li>
+						</ul>
+					</li>
+					<li class="nav-li">
+						<a href="../service/index.html">服务合作</a>
+						<ul class="nav-wrop">
+							<li><a href="../service/index.html">品牌类</a></li>
+							<li><a href="../service/01-index.html">定制类</a></li>
+							<li><a href="../service/02-index.html">大众类</a></li>
+						</ul>
+					</li>
+					<li class="nav-li">
+						<a href="../rczp/01.html">人才招聘</a>
+						<ul class="nav-wrop">
+							<li><a href="../rczp/01.html">人才推荐</a></li>
+							<li><a href="../rczp/02.html">社会招聘</a></li>
+							<li><a href="../rczp/03.html">校园招聘</a></li>
+							<li><a href="../rczp/index.html">相关问题</a></li>
+						</ul>
+					</li>
+					<li><a href="../report/index.html">监督举报</a></li>
+					<li class="nav-li">
+						<a href="../lxmy/index.html">联系我们</a>
+						<ul class="nav-wrop">
+							<li><a href="../lxmy/cphz.html">产品合作</a></li>
+							<li><a href="../lxmy/index.html#lxfs">联系方式</a></li>
+							<li><a href="../lxmy/index.html#zxly">在线留言</a></li>
+						</ul>
+					</li>
+				</ul>
+		
+				<div class="english"><a href="https://www.bessky.cn/#page1">EN</a></div>
+				<div class="box">
+					<button id="ture" onclick="show(1)"></button>
+					<button id="false" onclick="show(2)"></button>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function() {
+				$(".nav-li").hover(function() {
+					if ($(this).find(".nav-wrop").length > 0) {
+						$(this).find(".nav-wrop").stop(true, true).slideDown(200)
+					}
+				}, function() {
+					$(this).find(".nav-wrop").stop(true, true).slideUp("fast")
+				})
+			})
+		</script>
+		<!-- 移动端导航 -->
+		<div class="content" id="content">
+			<div class="list">
+				<ul>
+					<li>
+						<p class="title"><a href="../index.html">首页</a></p>
+					</li>
+					<li>
+						<p class="title"><a href="../company/index.html">公司简介</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../company/index.html">公司简介</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#qywh">企业文化</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#qyxcp">视频宣传</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#ryzi">荣誉资质</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#fzlc">发展历程</a></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="title"><a href="../new/index.html">公司动态</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../new/01-index.html">公司动态</a></p>
+							</li>
+							<li>
+								<p><a href="../new/02-index.html">行业动态</a></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="title"><a href="../service/index.html">服务合作</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../service/index.html">品牌类</a></p>
+							</li>
+							<li>
+								<p><a href="../service/01-index.html">定制类</a></p>
+							</li>
+							<li>
+								<p><a href="../service/02-index.html">大众类</a></p>
+							</li>
+						</ul>
+		
+					</li>
+					<li>
+						<p class="title"><a href="../rczp/01.html">人才招聘</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../rczp/01.html">人才推荐</a></p>
+							</li>
+							<li>
+								<p><a href="../rczp/02.html">社会招聘</a></p>
+							</li>
+							<li>
+								<p><a href="../rczp/03.html">校园招聘</a></p>
+							</li>
+							<li>
+								<p><a href="../rczp/index.html">相关问题</a></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="title"><a href="../report/index.html">监督举报</a></p>
+					</li>
+					<li>
+						<p class="title"><a href="../lxmy/index.html">联系我们</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../lxmy/cphz.html">产品合作</a></p>
+							</li>
+							<li>
+								<p><a href="../lxmy/index.html#lxfs">联系方式</a></p>
+							</li>
+							<li>
+								<p><a href="../lxmy/index.html#zxly">在线留言</a></p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$('.list ul li p').clickdown();
+				$('.list-se p[class=title]').clickup();
+				$('.list>ul>li').ad();
+				console.log($().index())
+			});
+		</script>
+		<div class="main">
+			<div class="banner" id="lxfs"><img src="img/banner.jpg" alt=""></div>
+			<!-- 分页 -->
+			<div class="fy">
+				<ul>
+					<li><a href="../lxmy/cphz.html">产品合作</a></li>
+					<li><a href="../lxmy/index.html">联系方式</a></li>
+					<li><a href="../lxmy/index.html#zxly">在线留言</a></li>
+				</ul>
+			</div>
+			<!-- 分类 -->
+			<div class="conter">
+				<div class="wnext">
+					<div class="h60"></div>
+					<ul>
+						<li>
+							<div class="ico"><img src="img/a040.png" alt=""></div>
+							<div class="con">
+								<h5>品牌合作</h5>
+								<p>联系人：何先生</p>
+								<p>咨询电话：15118146625</p>
+								<p>邮箱：2355302455@qq.com</p>
+							</div>
+						</li>
+						<li>
+							<div class="ico"><img src="img/a040.png" alt=""></div>
+							<div class="con">
+								<h5>人才招聘</h5>
+								<p>联系人：陈女士</p>
+								<p>咨询电话：0755-21046440</p>
+								<p>邮箱：hr@bessky.cn</p>
+							</div>
+						</li>
+						<li>
+							<div class="ico"><img src="img/a042.png" alt=""></div>
+							<div class="con">
+								<h5>总公司地址</h5>
+								<p>深圳市龙华区东环一路安锦恒科技大厦</p>
+							</div>
+						</li>
+					</ul>
+					<div class="h60"></div>
+				</div>
+				<div class="bg"></div>
+			</div>
+			<!-- 在线留言 -->
+			<div class="zx" id="zxly">
+				<div class="h80"></div>
+				<div class="zxly">
+					<div class="title">
+						<h3>在线留言</h3>
+						<h4>Online Message</h4>
+					</div>
+					<form action="" method="">
+						<p class="input1">
+							<lable>姓名:</lable>
+							<input type="text">
+						</p>
+						<p class="input1">
+							<lable>咨询电话:</lable>
+							<input type="text">
+						</p>
+						<p class="input1">
+							<lable>邮箱:</lable>
+							<input type="text">
+						</p>
+						<p class="input1 input2">
+							<lable>内容:</lable>
+							<textarea rows="" cols=""></textarea>
+						</p>
+						<input type="button" name="" id="" value="提交" class="btn"/>
+					</form>
+				</div>
+				<div class="h80"></div>
+			</div>
+		</div>
+		
+		
+		<!-- 尾部 -->
+		<div class="fool">
+			<div class="box">
+				© 2009-2021 深圳市宝视佳科技有限公司<a href=""> 粤ICP备13034371号</a>
+			</div>
+		</div>
+	</body>
+</html>
