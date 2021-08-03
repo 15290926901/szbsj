@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>行业动态</title>
+		<link rel="shortcut icon" type="text/css" href="img/logo.svg" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/new.css" />
+
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 经过出行 -->
+
+		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+
+
+		<!--   [if lt IE 9]
+  <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src='http://oss.maxcdn.com/libs/respond.js/1.3.0/reapond.min.js'></script>
+  <script src='http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js'></script>
+  [endif] -->
+
+	</head>
+	<body>
+		<!-- PC头部nav -->
+		<div class="pc-topnav">
+			<div class="topnav">
+				<h2><a href="../index.html"><img src="../img/logo.svg"></a></h2>
+				<ul class="nav" id="nav">
+					<li>
+						<a href="../index.html">首页</a>
+					</li>
+					<li class="nav-li">
+						<a href="../company/index.html">公司简介</a>
+						<ul class="nav-wrop">
+							<li><a href="../company/index.html#gsjj" >公司简介</a></li>
+							<li><a href="../company/index.html#qywh">公司文化</a></li>
+							<li><a href="../company/index.html#qyxcp">频道宣传</a></li>
+							<li><a href="../company/index.html#ryzi">荣誉资质</a></li>
+							<li><a href="../company/index.html#fzlc">发展历程</a></li>
+						</ul>
+					</li>
+					<li class="nav-li">
+						<a href="../new/index.html">新闻动态</a>
+						<ul class="nav-wrop">
+							<li><a href="../new/01-index.html">公司动态</a></li>
+							<li><a href="../new/02-index.html">行业动态</a></li>
+						</ul>
+					</li>
+					<li class="nav-li">
+						<a href="../service/index.html">服务合作</a>
+						<ul class="nav-wrop">
+							<li><a href="../service/index.html">品牌类</a></li>
+							<li><a href="../service/01-index.html">定制类</a></li>
+							<li><a href="../service/02-index.html">大众类</a></li>
+						</ul>
+					</li>
+					<li class="nav-li">
+						<a href="../rczp/01.html">人才招聘</a>
+						<ul class="nav-wrop">
+							<li><a href="../rczp/01.html">人才推荐</a></li>
+							<li><a href="../rczp/02.html">社会招聘</a></li>
+							<li><a href="../rczp/03.html">校园招聘</a></li>
+							<li><a href="../rczp/index.html">相关问题</a></li>
+						</ul>
+					</li>
+					<li><a href="../report/index.html">监督举报</a></li>
+					<li class="nav-li">
+						<a href="../lxmy/index.html">联系我们</a>
+						<ul class="nav-wrop">
+							<li><a href="../lxmy/cphz.html">产品合作</a></li>
+							<li><a href="../lxmy/index.html#lxfs">联系方式</a></li>
+							<li><a href="../lxmy/index.html#zxly">在线留言</a></li>
+						</ul>
+					</li>
+				</ul>
+		
+				<div class="english"><a href="https://www.bessky.cn/#page1">EN</a></div>
+				<div class="box">
+					<button id="ture" onclick="show(1)"></button>
+					<button id="false" onclick="show(2)"></button>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function() {
+				$(".nav-li").hover(function() {
+					if ($(this).find(".nav-wrop").length > 0) {
+						$(this).find(".nav-wrop").stop(true, true).slideDown(200)
+					}
+				}, function() {
+					$(this).find(".nav-wrop").stop(true, true).slideUp("fast")
+				})
+			})
+		</script>
+		<!-- 移动端导航 -->
+		<div class="content" id="content">
+			<div class="list">
+				<ul>
+					<li>
+						<p class="title"><a href="../index.html">首页</a></p>
+					</li>
+					<li>
+						<p class="title"><a href="../company/index.html">公司简介</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../company/index.html">公司简介</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#qywh">企业文化</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#qyxcp">视频宣传</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#ryzi">荣誉资质</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#fzlc">发展历程</a></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="title"><a href="../new/index.html">公司动态</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../new/01-index.html">公司动态</a></p>
+							</li>
+							<li>
+								<p><a href="../new/02-index.html">行业动态</a></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="title"><a href="../service/index.html">服务合作</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../service/index.html">品牌类</a></p>
+							</li>
+							<li>
+								<p><a href="../service/01-index.html">定制类</a></p>
+							</li>
+							<li>
+								<p><a href="../service/02-index.html">大众类</a></p>
+							</li>
+						</ul>
+		
+					</li>
+					<li>
+						<p class="title"><a href="../rczp/01.html">人才招聘</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../rczp/01.html">人才推荐</a></p>
+							</li>
+							<li>
+								<p><a href="../rczp/02.html">社会招聘</a></p>
+							</li>
+							<li>
+								<p><a href="../rczp/03.html">校园招聘</a></p>
+							</li>
+							<li>
+								<p><a href="../rczp/index.html">相关问题</a></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="title"><a href="../report/index.html">监督举报</a></p>
+					</li>
+					<li>
+						<p class="title"><a href="../lxmy/index.html">联系我们</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../lxmy/cphz.html">产品合作</a></p>
+							</li>
+							<li>
+								<p><a href="../lxmy/index.html#lxfs">联系方式</a></p>
+							</li>
+							<li>
+								<p><a href="../lxmy/index.html#zxly">在线留言</a></p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$('.list ul li p').clickdown();
+				$('.list-se p[class=title]').clickup();
+				$('.list>ul>li').ad();
+				console.log($().index())
+			});
+		</script>
+		<!-- main -->
+		<div class="main">
+			<div class="banner">
+				<img src="img/banner.jpg" alt="">
+			</div>
+			<div class="content">
+				<div class="tactive" id="tactive">
+					<p id="tactive-p" class="tactive-p">
+						<a href="../new/01-index.html" class="djA"><span>公司动态</span></a>
+						<a href="../new/02-index.html" class="djA Xactive"><span>行业动态</span></a>
+					</p>
+				</div>
+				<div class="factive" id="factive">
+					<div class="Xbox">
+						<ul class="box-ul" id="box1">
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-01.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台5月29日最新政策盘点</h3>
+										<p>跨境电商行业5月29日的最新资讯：1. 亚马逊：将依法核查电商平台和卖家的税务证书；</p>
+										<span>2021-05-29</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-02.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">年会特辑 | 2021『伙力全开 视在必燃』年会盛典圆满落幕</h3>
+										<p>让我们一起回溯这段欢乐的时光，重温2021年会盛典的别样风采吧！</p>
+										<span>2021-04-23</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-03.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台4月13日最新政策盘点</h3>
+										<p>跨境电商行业4月13日的最新资讯：1. 亚马逊：欧盟全站点VAT政策大变更；</p>
+										<span>2021-04-13</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-04.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台2月20日最新政策盘点</h3>
+										<p>跨境电商行业2月20日的最新资讯：1. 亚马逊:货件确认流程即将变更；</p>
+										<span>2021-02-20</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-05.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">宝视佳牛气到 | @宝视佳er，2021“新春特别企划”完结篇已上映！</h3>
+										<p>新的一年，全体宝视佳er一起鸿运启市，财源滚滚，牛气冲天！</p>
+										<span>2021-02-19</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-06.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台1月23日最新政策盘点</h3>
+										<p>跨境电商行业1月23日的最新资讯：1. 亚马逊：卖家自配送商品现有资格参与秒杀和 7 天促销；</p>
+										<span>2021-01-23</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-07.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">从全省跨境电商综试区建设推进大会上看——跨境第一城，浙江距离有多远　　</h3>
+										<p>到2035年，中国50%的外贸将依靠跨境电商来完成。</p>
+										<span>2020-12-28</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-08.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台12月15日最新政策盘点</h3>
+										<p>跨境电商行业12月15日的最新资讯：1. 亚马逊：发布创建ASIN的有效期属性变更；</p>
+										<span>2020-12-15</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-09.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台11月30日最新政策盘点</h3>
+										<p>跨境电商行业11月30日的最新资讯：1. 亚马逊：黑五系统出大Bug，现已修复；</p>
+										<span>2020-11-30</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-10.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">“大麦节”合集 | 燃烧旺季，爆单不停</h3>
+										<p>这次大卖，我们所有的宝视佳家人们都乘风破浪，全力以赴，为冲刺大促奋斗拼搏。</p>
+										<span>2020-11-30</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-11.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台11月15日最新政策盘点</h3>
+										<p>跨境电商行业11月15日的最新资讯：1. 亚马逊：“定价状况”中潜在定价错误导致商品停售的通知；</p>
+										<span>2020-11-15</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/h-12.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台10月30日最新政策盘点</h3>
+										<p>跨境电商行业10月30日的最新资讯：1.亚马逊：将使用新的多渠道配送订单创建工具加快订单创建速度；</p>
+										<span>2020-10-30</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="fypag">
+							<div class="fy">
+								<a href="">1</a>
+								<a href="">2</a>
+								<a href="">3</a>
+								<a href="">4</a>
+								<a href="">5</a>
+								<a href="">6</a>
+								<a href="">NEXT</a>
+							</div>
+						</div>
+					</div>
+					<div class="Xbox">
+						<ul class="box-ul" id="box1">
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-01.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台5月29日最新政策盘点</h3>
+										<p>跨境电商行业5月29日的最新资讯：1. 亚马逊：将依法核查电商平台和卖家的税务证书；</p>
+										<span>2021-05-09</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-02.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">年会特辑 | 2021『伙力全开 视在必燃』年会盛典圆满落幕</h3>
+										<p>让我们一起回溯这段欢乐的时光，重温2021年会盛典的别样风采吧！</p>
+										<span>2021-04-23</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-03.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台4月13日最新政策盘点</h3>
+										<p>跨境电商行业4月13日的最新资讯：1. 亚马逊：欧盟全站点VAT政策大变更；</p>
+										<span>2021-04-13</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-04.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台2月20日最新政策盘点</h3>
+										<p>跨境电商行业2月20日的最新资讯：1. 亚马逊:货件确认流程即将变更；</p>
+										<span>2021-02-20</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-05.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">宝视佳牛气到 | @宝视佳er，2021“新春特别企划”完结篇已上映！</h3>
+										<p>新的一年，全体宝视佳er一起鸿运启市，财源滚滚，牛气冲天！</p>
+										<span>2021-02-19</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-06.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台1月23日最新政策盘点</h3>
+										<p>跨境电商行业1月23日的最新资讯：1. 亚马逊：卖家自配送商品现有资格参与秒杀和 7 天促销；</p>
+										<span>2021-01-23</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-07.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">从全省跨境电商综试区建设推进大会上看——跨境第一城，浙江距离有多远　　</h3>
+										<p>到2035年，中国50%的外贸将依靠跨境电商来完成。</p>
+										<span>2020-12-28</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-08.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台12月15日最新政策盘点</h3>
+										<p>跨境电商行业12月15日的最新资讯：1. 亚马逊：发布创建ASIN的有效期属性变更；</p>
+										<span>2020-12-15</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-09.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台11月30日最新政策盘点</h3>
+										<p>跨境电商行业11月30日的最新资讯：1. 亚马逊：黑五系统出大Bug，现已修复；</p>
+										<span>2020-11-30</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-10.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">“大麦节”合集 | 燃烧旺季，爆单不停</h3>
+										<p>这次大卖，我们所有的宝视佳家人们都乘风破浪，全力以赴，为冲刺大促奋斗拼搏。</p>
+										<span>2020-11-30</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-11.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台11月15日最新政策盘点</h3>
+										<p>跨境电商行业11月15日的最新资讯：1. 亚马逊：“定价状况”中潜在定价错误导致商品停售的通知；</p>
+										<span>2020-11-15</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="img"><img src="img/g-12.jpg"></div>
+									<div class="text">
+										<h3 class="text-overflow">跨境电商各大平台10月30日最新政策盘点</h3>
+										<p>跨境电商行业10月30日的最新资讯：1.亚马逊：将使用新的多渠道配送订单创建工具加快订单创建速度；</p>
+										<span>2020-10-30</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="fypag">
+							<div class="fy">
+								<a href="">1</a>
+								<a href="">2</a>
+								<a href="">3</a>
+								<a href="">4</a>
+								<a href="">5</a>
+								<a href="">6</a>
+								<a href="">NEXT</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+					var aActive=document.getElementsByClassName("djA");
+					var Xbox=document.getElementsByClassName("Xbox");
+					for(var i=0; i<aActive.length;i++){
+						aActive[i].index=i;
+						// console.log(aActive[i]);
+						aActive[i].onclick=function(){
+							for(var i=0; i<aActive.length; i++){
+								aActive[i].classList.remove("Xactive");
+								Xbox[i].style.display="none";
+							}
+							this.classList.add("Xactive");
+							Xbox[this.index].style.display="block";
+						}
+					}
+			</script>
+		</div>
+		<!-- fool -->
+		<div class="fool">
+			<div class="box">
+				© 2009-2021 深圳市宝视佳科技有限公司<a href=""> 粤ICP备13034371号</a>
+			</div>
+		</div>
+	</body>
+</html>

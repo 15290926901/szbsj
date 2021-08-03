@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>人才招聘</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li>
+					<div class="btn text-overflow">1.公司今年春招怎么进行简历投递？<span></span></div>
+					<p class="text-overflow-more">通过云校招平台、“宝视佳微招聘”公众号进行简历投递，或者通过我们网申渠道http://bessky.zhiye.com/Campus</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">2.简历投递后多久处理的，面试流程是什么样的？<span></span></div>
+					<p class="text-overflow-more">收到简历后2天内会进行处理，面试流程是：简历投递—视频初试—线上测评—视频复试—录用offer—签约</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">3.公司招聘的标准有哪些？<span></span></div>
+					<p class="text-overflow-more">我们会着重从个人职业兴趣匹配、责任心、总结分析能力和解决问题的能力四个方面综合考虑，优先考虑对跨境电商行业和公司感兴趣的优秀人才。</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">4.面试后多久能知道结果？<span></span></div>
+					<p class="text-overflow-more">一般是面试后2个工作日内告知。</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">5.工作岗位怎么进行分配？<span></span></div>
+					<p class="text-overflow-more">按照个人应聘的岗位进行分配面试，同时在面试过程和发放offer前跟你确认具体的岗位。</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">6.上班时间是怎么样的？<span></span></div>
+					<p class="text-overflow-more">8：30-12：00，13：30-18：00</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">7.什么时候发工资？<span></span></div>
+					<p class="text-overflow-more">每月的15号发上个月工资。</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">8.报到时间怎么安排？<span></span></div>
+					<p class="text-overflow-more">为了让大家优先完成学业，录用签约的校招生统一安排在毕业后入职。</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">9.食宿上怎么安排呢？<span></span></div>
+					<p class="text-overflow-more">公司为校招生提供3个月的住宿安排，只需缴纳水电费，伙食需自己解决。</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">10.实习生没有拿到毕业证前会与社招生区别对待吗？<span></span></div>
+					<p class="text-overflow-more">尚未拿到毕业证的应届生提前到公司实习，实习期统一购买商业险，毕业之后购买五险一金，享受社招生同等培训和晋升机会，以及其他相关福利等。</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">11.对于应届生的培训晋升是怎样的？<span></span></div>
+					<p class="text-overflow-more">每个岗位的晋升渠道非常明确（管理岗和业务精英岗双通道），90%以上都是内部晋升。入职后为每一位新员工安排一对一的导师带教，公司非常注重业务技能培训，累积了丰富的非教科书式的实操经验，这些经验会让新员工快速的适应工作岗位和环境。</p>
+				</li>
+				<li>
+					<div class="btn text-overflow">12.如果错过了宣讲或双选会还有机会应聘吗？<span></span></div>
+					<p class="text-overflow-more">由于疫情的原因，今年春招都是线上报名学校的招聘会，线下不再安排，2020届春招一直会持续到今年6月份，如果错过了我们的宣讲会或双选会，可以点击关注“宝视佳微招聘”，点击“关于我们”—“人才招聘”—“校招岗位”投递简历，简历筛选通过的也会安排视频面试。</p>
+				</li>
+			</ul>
+			<script>
+				var btn=document.getElementsByTagName("span");
+				var pObj=document.getElementsByTagName("p");
+				for(var i=0; i<btn.length; i++){
+					btn[i].index=i;
+					btn[i].onclick=function(){
+						
+						if(this.className=="active"){
+							this.classList.remove("active");
+							pObj[this.index].style.display="none";
+						}else{
+							for(var i=0; i<btn.length; i++){
+								btn[i].classList.remove("active");
+								pObj[i].style.display="none";
+							}
+							this.classList.add("active");
+							pObj[this.index].style.display="block";
+						}
+						
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>
