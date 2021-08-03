@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>公司简介</title>
+		<link rel="shortcut icon" type="text/css" href="../img/logo.svg" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="css/company.css" />
+
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 经过出行 -->
+
+		<script src="js/style.js" type="text/javascript" charset="utf-8"></script>
+
+
+		<!--   [if lt IE 9]
+  <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src='http://oss.maxcdn.com/libs/respond.js/1.3.0/reapond.min.js'></script>
+  <script src='http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js'></script>
+  [endif] -->
+
+	</head>
+	<body>
+		<!-- PC头部nav -->
+		<div class="pc-topnav">
+			<div class="topnav">
+				<h2><a href="../index.html"><img src="../img/logo.svg"></a></h2>
+				<ul class="nav" id="nav">
+					<li>
+						<a href="../index.html">首页</a>
+					</li>
+					<li class="nav-li">
+						<a href="../company/index.html">公司简介</a>
+						<ul class="nav-wrop">
+							<li><a href="../company/index.html#gsjj" >公司简介</a></li>
+							<li><a href="../company/index.html#qywh">公司文化</a></li>
+							<li><a href="../company/index.html#qyxcp">频道宣传</a></li>
+							<li><a href="../company/index.html#ryzi">荣誉资质</a></li>
+							<li><a href="../company/index.html#fzlc">发展历程</a></li>
+						</ul>
+					</li>
+					<li class="nav-li">
+						<a href="../new/index.html">新闻动态</a>
+						<ul class="nav-wrop">
+							<li><a href="../new/01-index.html">公司动态</a></li>
+							<li><a href="../new/02-index.html">行业动态</a></li>
+						</ul>
+					</li>
+					<li class="nav-li">
+						<a href="../service/index.html">服务合作</a>
+						<ul class="nav-wrop">
+							<li><a href="../service/index.html">品牌类</a></li>
+							<li><a href="../service/01-index.html">定制类</a></li>
+							<li><a href="../service/02-index.html">大众类</a></li>
+						</ul>
+					</li>
+					<li class="nav-li">
+						<a href="../rczp/01.html">人才招聘</a>
+						<ul class="nav-wrop">
+							<li><a href="../rczp/01.html">人才推荐</a></li>
+							<li><a href="../rczp/02.html">社会招聘</a></li>
+							<li><a href="../rczp/03.html">校园招聘</a></li>
+							<li><a href="../rczp/index.html">相关问题</a></li>
+						</ul>
+					</li>
+					<li><a href="../report/index.html">监督举报</a></li>
+					<li class="nav-li">
+						<a href="../lxmy/index.html">联系我们</a>
+						<ul class="nav-wrop">
+							<li><a href="../lxmy/cphz.html">产品合作</a></li>
+							<li><a href="../lxmy/index.html#lxfs">联系方式</a></li>
+							<li><a href="../lxmy/index.html#zxly">在线留言</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="english"><a href="https://www.bessky.cn/#page1">EN</a></div>
+				<div class="box">
+					<button id="ture" onclick="show(1)"></button>
+					<button id="false" onclick="show(2)"></button>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(function() {
+				$(".nav-li").hover(function() {
+					if ($(this).find(".nav-wrop").length > 0) {
+						$(this).find(".nav-wrop").stop(true, true).slideDown(200)
+					}
+				}, function() {
+					$(this).find(".nav-wrop").stop(true, true).slideUp("fast")
+				})
+			})
+		</script>
+		<!-- 移动端导航 -->
+		<div class="content" id="content">
+			<div class="list">
+				<ul>
+					<li>
+						<p class="title"><a href="../index.html">首页</a></p>
+					</li>
+					<li>
+						<p class="title"><a href="../company/index.html">公司简介</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../company/index.html">公司简介</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#qywh">企业文化</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#qyxcp">视频宣传</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#ryzi">荣誉资质</a></p>
+							</li>
+							<li>
+								<p><a href="../company/index.html#fzlc">发展历程</a></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="title"><a href="../new/index.html">公司动态</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../new/01-index.html">公司动态</a></p>
+							</li>
+							<li>
+								<p><a href="../new/02-index.html">行业动态</a></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="title"><a href="../service/index.html">服务合作</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../service/index.html">品牌类</a></p>
+							</li>
+							<li>
+								<p><a href="../service/01-index.html">定制类</a></p>
+							</li>
+							<li>
+								<p><a href="../service/02-index.html">大众类</a></p>
+							</li>
+						</ul>
+
+					</li>
+					<li>
+						<p class="title"><a href="../rczp/01.html">人才招聘</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../rczp/01.html">人才推荐</a></p>
+							</li>
+							<li>
+								<p><a href="../rczp/02.html">社会招聘</a></p>
+							</li>
+							<li>
+								<p><a href="../rczp/03.html">校园招聘</a></p>
+							</li>
+							<li>
+								<p><a href="../rczp/index.html">相关问题</a></p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<p class="title"><a href="../report/index.html">监督举报</a></p>
+					</li>
+					<li>
+						<p class="title"><a href="../lxmy/index.html">联系我们</a></p>
+						<ul class='list-se'>
+							<p class="title">返回</p>
+							<li>
+								<p><a href="../lxmy/cphz.html">产品合作</a></p>
+							</li>
+							<li>
+								<p><a href="../lxmy/index.html#lxfs">联系方式</a></p>
+							</li>
+							<li>
+								<p><a href="../lxmy/index.html#zxly">在线留言</a></p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$('.list ul li p').clickdown();
+				$('.list-se p[class=title]').clickup();
+				$('.list>ul>li').ad();
+				console.log($().index())
+			});
+		</script>
+		<!-- main -->
+		<main class="main">
+			<!-- banner -->
+			<div class="banner">
+				<img src="img/5e93cde038e2f.jpg">
+			</div>
+			<!-- 公司简介 -->
+			<div class="text w90" id="gsjj">
+				<div class="title mb60">
+					<h2>公司简介</h2>
+					<span>Company Profile</span>
+				</div>
+				<ul class="num">
+					<li>
+						<h3 class="value1" id="value1">2007</h3>
+						<h6>公司成立于2007年</h6>
+					</li>
+					<li>
+						<h3 class="value2" id="value2">10</h3>
+						<h6>励精图治10余年</h6>
+					</li>
+					<li>
+						<h3 class="value3" id="value3">200</h3>
+						<h6>业务辐射全球200多个国家和地区</h6>
+					</li>
+				</ul>
+				<script>
+				// 数字计数
+					var value1=document.getElementById("value1");
+					var value2=document.getElementById("value2");
+					var value3=document.getElementById("value3");
+					var va1=100;
+					var va2=1;
+					var va3=18;
+					var t1=setInterval(function(){
+						va1+=10;
+						value1.innerHTML=va1;
+						if(va1>=2000){
+							clearTimeout(t1);
+							value1.innerHTML="2007";
+						}
+					},1)
+					var t2=setInterval(function(){
+						va2++;
+						value2.innerHTML=va2;
+						if(va2==10){
+							clearTimeout(t2);
+						}
+					},100)
+					var t3=setInterval(function(){
+						va3++;
+						value3.innerHTML=va3;
+						if(va3>=200){
+							clearTimeout(t3);
+						}
+					},1)
+				</script>
+				<div class="part mt60">
+					<p>深圳市宝视佳科技有限公司于2007年创立，发展至今已跻身为世界级的跨境电商龙头企业之一，目前在美国、欧洲、深圳、广州、东莞等地先后设立了数十家分公司，全球雇员超三千人。公司专注于跨境产品的研发、制造和销售，产品涵盖数十个领域，百万种商品，并构建了从供应端到销售端精细化运营的跨境电商生态体系，专注打造“跨境电商的沃尔玛”。
+					</p>
+					<p>在跨境电商行业纵横十余年，宝视佳一直领跑全国。公司先后荣获国家高新技术企业称号、Amazon与Wish全国前五强、Aliexpress与Lazada全国前十强等荣誉，优质的产品和高效的服务更赢得了广大客户和合作伙伴的信任及赞誉。公司与十多家跨境平台通力合作，目前业务渠道辐射全球200多个国家和地区，日订单处理量数十万计，2018年的年销售额超50亿。
+					</p>
+					<p>如今的宝视佳正以国际化的视野，坚实自信的步伐，将事业不断推向新高度，一个有全球影响力的跨境电商企业正在世界的东方崛起！</p>
+				</div>
+			</div>
+			<!-- 数字 -->
+
+			<!-- 企业文化 -->
+			<div class="wenhua" id="qywh">
+				<div class="box">
+					<div class="h80"></div>
+					<div class="title">
+						<h2>企业文化</h2>
+						<span>corporate culture</span>
+					</div>
+					<ul>
+						<li>
+							<div>
+								<img src="img/5e702a71b85a5.png" alt="">
+							</div>
+							<h3>切页愿景</h3>
+							<h4>跨境的沃尔玛</h4>
+						</li>
+						<li>
+							<div>
+								<img src="img/5e702bc279a67.png" alt="">
+							</div>
+							<h3>企业使命</h3>
+							<h4>
+								<p>为客户创造价值</p>
+								<p>实现员工梦想</p>
+								<p>对社会做出贡献</p>
+							</h4>
+						</li>
+						<li>
+							<div>
+								<img src="img/5e702be313281.png" alt="">
+							</div>
+							<h3>企业价值观</h3>
+							<h4>
+								<p>以人为本</p>
+								<p>齐心协力</p>
+								<p>艰苦奋斗</p>
+							</h4>
+						</li>
+						<li>
+							<div>
+								<img src="img/5e702b2ca6249.png" alt="">
+							</div>
+							<h3>企业精神</h3>
+							<h4>忠诚 务实 创新</h4>
+						</li>
+						<li>
+							<div>
+								<img src="img/5e702a906093b.png" alt="">
+							</div>
+							<h3>经营理念</h3>
+							<h4>诚信 服务 共赢</h4>
+						</li>
+					</ul>
+					<div class="h80"></div>
+				</div>
+			</div>
+			<!-- 企业宣传片 -->
+			<div class="propag" id="qyxcp">
+				<div class="title">
+					<h2>企业宣传片</h2>
+					<span>corporate culture</span>
+				</div>
+				<div class="img">
+					<img src="img/b010.jpg" alt="">
+					<div class="btn" id="btn"><img src="img/a024.png" alt=""></div>
+					<div class="zrct" id="zrct">点击消失</div>
+					<div class="zrcb" id="zrcb"></div>
+				</div>
+				<script>
+					var btn = document.getElementById("btn");
+					var zt = document.getElementById("zrct");
+
+					var zb = document.getElementById("zrcb");
+					btn.onclick = function() {
+						zt.style.top = "0";
+						zb.style.bottom = "0";
+					}
+					zt.onclick = function() {
+						zt.style.top = "-50%";
+						zb.style.bottom = "-50%";
+					}
+					zb.onclick = function() {
+						zt.style.top = "-50%";
+						zb.style.bottom = "-50%";
+					}
+				</script>
+			</div>
+			<!-- 荣誉资质 -->
+			<div class="honor" id="ryzi">
+				<div class="title">
+					<h2>荣誉资质</h2>
+					<span>Honorary qualification</span>
+				</div>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/5e8462aa89ee4.png"></div>
+						<div class="swiper-slide"><img src="img/5e8462b8eb69d.png"></div>
+						<div class="swiper-slide"><img src="img/5e8462c767904.png"></div>
+						<div class="swiper-slide"><img src="img/5e8462d3d70e4.png"></div>
+						<div class="swiper-slide"><img src="img/5e8462dfdd44a.png"></div>
+						<div class="swiper-slide"><img src="img/5e8462ebd6691.png"></div>
+						<div class="swiper-slide"><img src="img/5e8462f7a9db5.png"></div>
+						<div class="swiper-slide"><img src="img/5e846685d442d.png"></div>
+						<div class="swiper-slide"><img src="img/5e846dde0d8b7.png"></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+
+				<!-- Swiper JS -->
+				<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
+
+				<!-- Initialize Swiper -->
+				<script>
+					var swiper = new Swiper('.swiper-container', {
+						slidesPerView: 3,
+						spaceBetween: 30,
+						slidesPerGroup: 3,
+						loop: true,
+						loopFillGroupWithBlank: true,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+					});
+				</script>
+			</div>
+			<!-- 发展历程 -->
+			<div class="course" id="fzlc">
+				<div class="box">
+					<div class="title">
+						<h2>发展历程</h2>
+						<span>development History</span>
+					</div>
+					<div class="content">
+						<div class="left"></div>
+						<div class="right"></div>
+						<div class="zhou">
+							<div class="zhounei">
+								<h2>2007-2010</h2>
+								<i></i>
+								<div>
+									<p>2007年成立 </p>
+									<p>年营销额破一亿 </p>
+									<p>连续三年蝉联ebay全国前十强</p>
+								</div>
+							</div>
+							<div class="zhounei">
+								<h2>2011-2014</h2>
+								<i></i>
+								<div>
+									<p>年营业额破10亿</p>
+									<p>2014年 Aliexpress Lazada全国前十强 </p>
+								</div>
+							</div>
+							<div class="zhounei">
+								<h2>2007-2010</h2>
+								<i></i>
+								<div>
+									<p>2015-2018</p>
+									<p>年营业额破50亿</p>
+									<p>2017全年订单量破1亿件</p>
+									<p>专利数超100个</p>
+									<p>产品品牌数超10个</p>
+									<p>Amazon、Aliexpress、Wish全国前五强</p>
+								</div>
+							</div>
+							<div class="zhounei">
+								<h2>2019及三年计划</h2>
+								<i></i>
+								<div>
+									<p>年营业额破100亿</p>
+									<p>全球平台超100个 </p>
+									<p>专利数量超500个</p>
+									<p>产品品牌超30个</p>
+									<p>大数据运营管理中心</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fool">
+				<div class="box">
+					© 2009-2021 深圳市宝视佳科技有限公司<a href=""> 粤ICP备13034371号</a>
+				</div>
+			</div>
+		</main>
+
+	</body>
+</html>
